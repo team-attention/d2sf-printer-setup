@@ -1,14 +1,15 @@
-# sindoh-printer-setup
+# d2sf-printer-setup
 
-신도리코 D451 복합기 Mac 설치 가이드 - 드라이버 다운로드부터 테스트 인쇄까지.
+Naver D2SF 입주 공간 프린터 세팅이 너무 귀찮아서 만든 Claude Code 플러그인.
+
+새로 입주하면 프린터 드라이버 찾고, IP 넣고, PPD 선택하고... 이걸 매번 수동으로? "프린터 설치해줘" 한마디면 끝.
 
 ## What it does
 
-Claude Code에서 "프린터 설치", "복합기 설치", "신도리코 설치" 등을 말하면 D451 복합기 설치를 단계별로 안내합니다.
+Claude Code에서 "프린터 설치해줘"라고 말하면:
 
-**설치 흐름:**
-1. 현재 환경 진단 (macOS 버전, 기존 드라이버, 네트워크)
-2. 드라이버 다운로드 안내 (신도리코 홈페이지)
+1. macOS 환경 자동 진단
+2. 신도리코 D451 드라이버 설치 안내
 3. 프린터 추가 (`lpadmin`)
 4. 기본 프린터 설정
 5. 테스트 인쇄
@@ -16,18 +17,18 @@ Claude Code에서 "프린터 설치", "복합기 설치", "신도리코 설치" 
 ## Install
 
 ```bash
-claude install-plugin github:team-attention/sindoh-printer-setup
+claude install-plugin github:team-attention/d2sf-printer-setup
 ```
 
 ## Usage
 
 ```
 > 프린터 설치해줘
-> 신도리코 D451 설치
-> 복합기 드라이버 설치
+> 프린터가 안 돼요
+> 복합기 설치
 ```
 
-## Key Info
+## D2SF Printer Info
 
 | Item | Value |
 |------|-------|

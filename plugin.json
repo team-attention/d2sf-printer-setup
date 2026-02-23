@@ -1,7 +1,7 @@
 {
-  "name": "sindoh-printer-setup",
+  "name": "d2sf-printer-setup",
   "version": "0.1.0",
-  "description": "신도리코 D451 복합기 Mac 설치 가이드 - 드라이버 다운로드부터 테스트 인쇄까지",
+  "description": "D2SF 입주사를 위한 사무실 프린터 자동 설치 - 신도리코 D451 복합기",
   "author": {
     "name": "team-attention",
     "url": "https://github.com/team-attention"
