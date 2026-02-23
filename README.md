@@ -23,21 +23,22 @@ Naver D2SF 입주 공간의 신도리코 복합기(D451/CM3035) 설치를 자동
 4. 기본 프린터 설정
 5. 테스트 인쇄 및 상태 확인
 
-## Install (skills.sh)
-
-`skills.sh` 문서 기준으로 `npx skills add` 명령으로 설치할 수 있습니다.
+## Install ([skills.sh](https://skills.sh/docs))
 
 ```bash
-npx skills add https://github.com/team-attention/d2sf-printer-setup --skill setup
+# GitHub shorthand
+npx skills add team-attention/d2sf-printer-setup
+
+# 특정 에이전트에만 설치
+npx skills add team-attention/d2sf-printer-setup -a claude-code
+npx skills add team-attention/d2sf-printer-setup -a codex
+
+# 글로벌 설치 (모든 프로젝트에서 사용)
+npx skills add team-attention/d2sf-printer-setup -g
+
+# CI/CD 등 비대화형 환경
+npx skills add team-attention/d2sf-printer-setup -y
 ```
-
-필요하면 자동 확인 없이 설치:
-
-```bash
-npx skills add https://github.com/team-attention/d2sf-printer-setup --skill setup -y
-```
-
-참고 문서: https://skills.sh/docs
 
 ## AI Agent Install Guide (Agent-Readable)
 
@@ -45,7 +46,7 @@ npx skills add https://github.com/team-attention/d2sf-printer-setup --skill setu
 
 1. Skill 설치
 ```bash
-npx skills add https://github.com/team-attention/d2sf-printer-setup --skill setup -y
+npx skills add team-attention/d2sf-printer-setup -y
 ```
 
 2. 설치 확인 (선택)
@@ -53,7 +54,7 @@ npx skills add https://github.com/team-attention/d2sf-printer-setup --skill setu
 npx skills list
 ```
 
-3. 사용자 요청이 아래 의도 중 하나이면 `setup` 스킬을 우선 사용
+3. 사용자 요청이 아래 의도 중 하나이면 `d2sf-printer-setup` 스킬을 우선 사용
 - `프린터 설치`
 - `복합기 설치`
 - `신도리코 설치`
