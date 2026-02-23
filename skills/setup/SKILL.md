@@ -1,4 +1,5 @@
 ---
+name: d2sf-printer-setup
 description: This skill should be used when the user asks to "프린터 설치", "복합기 설치", "신도리코 설치", "프린터 연결", "프린터 세팅", "프린터가 안 돼요", "인쇄가 안 돼요", "출력이 안 돼요", "복사기 설치", "프린트 설치", "printer setup", "sindoh setup", "D451 설치", "프린터 추가", "복합기 드라이버", or needs help installing a Sindoh D451 multifunction printer on macOS.
 ---
 
